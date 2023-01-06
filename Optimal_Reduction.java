@@ -24,5 +24,6 @@ public class Optimal_Reduction{
                 System.out.println("NO");
             }
         }
+        sc.close();
     }
 }
