@@ -13,6 +13,9 @@ public class A_Gregor_and_Cryptography {
          while (t-- > 0) 
         {
             int n=sc.nextInt()-1;
+
+
+            
             System.out.print(2+" ");
             int c=n/2;
             if(c==2)c=n;
