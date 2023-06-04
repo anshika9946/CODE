@@ -2,28 +2,54 @@ import java.io.*;
 import java.util.*;
                   
 //(Anshika Agarwal)                   
-public class  digitToString {
+public class  A_Cinema_Line {
                    
      public static void main(String args[]) throws IOException {
                    
          FastReader sc = new FastReader();
                    
-                   String a[]={"zero","one","two","three","four","five","six","seven","eight","nine"};
-                   digit(412,a);
- 
+         long c1=0,c2=0,c3=0;    
+         long n = sc.nextLong();
+         while(n-->0) {
+			int a=sc.nextInt();
+			if(a==25) {
+				c2++;
+			}
+			else if(a==50) {
+				if(c2<1) {
+					c1=1;
+					break;
+				}
+				else
+				{
+					c2-=1;
+					c3+=1;
+				}
+			}
+			else if(a==100) {
+				if(c2>=1 && c3>=1) {
+					c2-=1;
+					c3-=1;
+				}
+				else if(c2>=3) {
+					c2-=3;
+				}
+				else
+				{
+					c1=1;
+					break;
+				}
+			}
+		}
+		if(c1==0) System.out.println("YES");
+		else System.out.println("NO");
+		
      }
-     static void digit(int n, String a[])
-     {
-if(n==0)return;
-
-int digi=n%10;
-
-digit(n/10,a);
-
-System.out.println(a[digi]);
-     }
-
-
+                                    
+                                     
+                                   
+                  
+                   
 //#########################################################################################################
     static int Intmax(){return Integer.MAX_VALUE;} 
     static int Intmint(){ return Integer.MIN_VALUE;}
