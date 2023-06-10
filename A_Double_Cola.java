@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
                   
 //(Anshika Agarwal)                   
-public class  M_Minimum_LCM {
+public class  A_Double_Cola {
                    
      public static void main(String args[]) throws IOException {
                    
@@ -10,27 +10,13 @@ public class  M_Minimum_LCM {
                    
                    
          int t = sc.nextInt();
-         while (t-- > 0)                    
-        {
-            int n=sc.nextInt();
-            int d=0;
-            if(n%2==0) {
-                System.out.println((n/2)+" "+(n/2));
-            }else {
-                for(int g=2;g<=Math.sqrt(n);g++) {
-                    if(n%g==0) {
-                        d++;
-                        System.out.println(((g-1)*(n/g))+" "+(n/g));
-                        break;
-                    }
-                }
-                if(d==0) {
-                    System.out.println((n-1)+" "+(1));
-                }
-            }
-
-                   
+         String s[]={"Sheldon","Leonard","Penny","Rajesh","Howard"};
+         while(t>5)
+         {
+         t=t-4;
+         t=t/2;
          }
+         System.out.println(s[t-1]);
      }
                                     
                                      

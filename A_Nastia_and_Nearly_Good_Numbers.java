@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
                   
 //(Anshika Agarwal)                   
-public class  M_Minimum_LCM {
+public class  A_Nastia_and_Nearly_Good_Numbers {
                    
      public static void main(String args[]) throws IOException {
                    
@@ -10,23 +10,19 @@ public class  M_Minimum_LCM {
                    
                    
          int t = sc.nextInt();
-         while (t-- > 0)                    
+         while (t-- > 0) 
         {
-            int n=sc.nextInt();
-            int d=0;
-            if(n%2==0) {
-                System.out.println((n/2)+" "+(n/2));
-            }else {
-                for(int g=2;g<=Math.sqrt(n);g++) {
-                    if(n%g==0) {
-                        d++;
-                        System.out.println(((g-1)*(n/g))+" "+(n/g));
-                        break;
-                    }
-                }
-                if(d==0) {
-                    System.out.println((n-1)+" "+(1));
-                }
+            Long A=sc.nextLong();
+            Long B=sc.nextLong();
+            long x = A*B*2;
+            if (B==1){
+                System.out.println("NO");
+            }
+            else{
+            System.out.println("YES");
+            System.out.print(A+" ");
+            System.out.print(x-A+" ");
+            System.out.println(x);
             }
 
                    

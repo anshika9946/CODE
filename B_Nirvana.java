@@ -2,36 +2,26 @@ import java.io.*;
 import java.util.*;
                   
 //(Anshika Agarwal)                   
-public class  M_Minimum_LCM {
-                   
+public class  B_Nirvana {
+
+static int max(int n){
+        if(n<10)
+            return Math.max(n,1);
+        else {
+            int ans = Math.max((n%10)*max(n/10), 9*max(n/10-1));
+            return ans;
+        }
+    }
      public static void main(String args[]) throws IOException {
                    
          FastReader sc = new FastReader();
                    
                    
          int t = sc.nextInt();
-         while (t-- > 0)                    
-        {
-            int n=sc.nextInt();
-            int d=0;
-            if(n%2==0) {
-                System.out.println((n/2)+" "+(n/2));
-            }else {
-                for(int g=2;g<=Math.sqrt(n);g++) {
-                    if(n%g==0) {
-                        d++;
-                        System.out.println(((g-1)*(n/g))+" "+(n/g));
-                        break;
-                    }
-                }
-                if(d==0) {
-                    System.out.println((n-1)+" "+(1));
-                }
-            }
-
-                   
-         }
+         int ans = max(t);
+        System.out.println(ans);
      }
+
                                     
                                      
                                    
