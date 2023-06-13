@@ -1,4 +1,5 @@
 
+
 import java.io.*;
 import java.util.*;
                   
@@ -7,7 +8,7 @@ public class  count {
                    
      public static void main(String args[]) throws IOException {
                    
-         FastReader sc = new FastReader();
+
                    
 countt(5);
      }

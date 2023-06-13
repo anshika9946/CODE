@@ -1,4 +1,5 @@
 
+
 import java.io.*;
 import java.util.*;
                   
@@ -7,7 +8,7 @@ public class  Fibbo {
                    
      public static void main(String args[]) throws IOException {
                    
-         FastReader sc = new FastReader();           
+            
                    
 int a = fib(4);
 System.out.println(a);
