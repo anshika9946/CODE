@@ -1,4 +1,4 @@
-//Ways to reach the nth stair
+
 
 import java.io.*;
 import java.util.*;
@@ -8,7 +8,7 @@ public class  climbingStair {
                    
      public static void main(String args[]) throws IOException {
                    
-         FastReader sc = new FastReader();
+   
                    
          int a = fib(3);
          System.out.println(a);
