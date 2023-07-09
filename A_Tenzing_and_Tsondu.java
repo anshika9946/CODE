@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
                   
 //(Anshika Agarwal)                   
-public class  B_Keep_it_Beautiful {
+public class  A_Tenzing_and_Tsondu{
                    
      public static void main(String args[]) throws IOException {
                    
@@ -12,6 +12,31 @@ public class  B_Keep_it_Beautiful {
          int t = sc.nextInt();
          while (t-- > 0) 
         {
+            int n=sc.nextInt();
+            int m=sc.nextInt();
+            int[] a=new int[n];
+            int[] b=new int[m];
+            long sa=0,sb=0;
+            for(int i=0;i<n;i++)
+            {
+                a[i]=sc.nextInt();
+                sa+=a[i];
+            }
+            for(int i=0;i<m;i++)
+            {
+                b[i]=sc.nextInt();
+                sb+=b[i];
+            }
+            if(sa>sb){
+                System.out.println("Tsondu");
+            }
+            else if(sa<sb){
+                System.out.println("Tenzing");
+            }
+            else{
+                System.out.println("Draw");
+            }
+
 
                    
          }
@@ -52,7 +77,7 @@ static void print(int a[]){int n=a.length;for(int i=0;i<n;i++){System.out.print(
         }
         String nextLine()
         {
-        String str = ""; 
+        String str =""; 
             try {
                 if(st.hasMoreTokens()){
                     str = st.nextToken(
