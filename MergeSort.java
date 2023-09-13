@@ -12,7 +12,7 @@ public class  MergeSort {
         {
           System.out.print(a[i]+" ");
         }
-     }
+     }\
         static void mergeSort(int a[],int l,int h)
         {
         if(l<h)
